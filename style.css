@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto" , sans-serif;
+}
+
+.container{
+    /*max-width: 400px;*/
+    max-width: 360px;
+
+    margin: auto;
+    background-color: #F4D1C1;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;  
+    border-radius: 10px;
+    margin-top: 50px;
+    border: 3px solid #746153;
+    margin-bottom: 70px;
+}
+
+h1{
+    margin-top: 0; /* só pra tirar o espaçamento de cima que o <h1> tem (e deixar o conteiner ajustado) */
+    font-size: 29px;
+    margin-bottom: 30px;
+    color: #261D17;
+}
+
+input{
+    display: block; /* "isso quer dizer que não vai ter nada do lado deles (para separa-los) */
+    width: 100%; /* vai pegar 100% da largurado elemento pai (fora o padding nesse caso) */
+    padding: 5px; /* border-box = "o 100% vai ser contando tudo, margind padding e etc..." */
+    box-sizing: border-box;  /* para ajustar e não deixar o padding deixar um lado maior que outro (nesse caso) */
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    border: 3px solid #261D17;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+body{
+    background-image: url(./imagens/fundox.jpg);
+    background-attachment: fixed;
+}
+
+.hdr{
+    background-color: #746153;
+    width: 100%;
+    text-align: center;
+
+    /* concertar errinho */
+    overflow: hidden;
+
+    border-bottom: 3px solid black;
+}
+
+#logo{
+    width: 500px;
+}
+
+button{
+    width: 100%;
+    color: white;
+    background-color: #DB6850;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 2rem;
+    border: none;
+}
+
+#resultado{
+    background-color: #746153;
+    margin-top: 30px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 2rem;
+    border: 5px dashed #DB6850;
+}
+
+.resultadoHiden{
+    display: none;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #FFF;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(27, 27, 27);
+    padding: 5px;
+}
+
+@media screen and (max-width: 750px){
+    #logo{
+        width: 400px;
+    }
+
+    .container{
+        max-width: 310px;
+    }
+}

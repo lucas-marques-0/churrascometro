@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagens/pig3.png">
+    <title>Churrascômetro</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+<body>
+    <div class="hdr">
+        <img id="logo" src="./imagens/banner.png">
+    </div>
+    <div class="container">
+        <h1>Saiba quanta comida e bebida vai precisar!</h1>
+        <input id="adultos" name="adultos" type="number" placeholder="Quantidade de adultos">
+        <input id="criancas" name="criancas" type="number" placeholder="Quantidade de crianças">
+        <input id="duracao" name="duracao" type="number" placeholder="Duração em horas">
+        <button onclick="calcular();mostrar()">Calcular</button>
+
+        <div id="resultado" class="resultadoHiden">
+            <!-- isso está no javascript -->
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    
+    <footer>Developed by Lucas Marques in 2021</footer>
+</body>
+</html>
